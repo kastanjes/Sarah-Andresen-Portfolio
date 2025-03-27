@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Portfolio Section */
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .portfolio img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  .contact-toggle {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  #toggle-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  #toggle-btn:hover {
+    color: #000;
+  }
+
+  #arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  #arrow.rotate {
+    transform: rotate(180deg);
+  }
+  
+  
+  /* Hidden state */
+  #contact-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+  }
+  
+  /* Visible state */
+  #contact-info.show {
+    max-height: 200px;
+    opacity: 1;
+  }
+  
+  

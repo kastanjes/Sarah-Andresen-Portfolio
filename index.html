@@ -3,11 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Your Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Add sections like header, about, projects, contact here -->
+  <header>
+    <h1>Sarah Andresen</h1>
+    <p>BSc Student – Game Development & Learning Technology | SDU</p>
+    <p>Computer graphic artist and Game developer</p>
+  
+    <div class="contact-toggle">
+      <button id="toggle-btn" onclick="toggleContact()">
+        Contact <span id="arrow">▼</span>
+      </button>      
+      <div id="contact-info">
+        <p>Email: <a href="mailto:AndresenSarah02@gmail.com">AndresenSarah02@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sarah-andresen-sdu-gamedev" target="_blank">
+          www.linkedin.com/in/sarah-andresen-sdu-gamedev
+        </a></p>
+        <p>Instagram: <a href="https://www.instagram.com/saahxk/" target="_blank">
+          instagram.com/saahxk
+        </a></p>
+      </div>
+      
+    </div>
+  </header>
+  
+
+  <main>
+    <section class="portfolio">
+      <img src="assets/test.jp" alt="Project 1" />
+      <p>Description</p>
+      <img src="assets/project2.jpg" alt="Project 2" />
+      <img src="assets/project3.jpg" alt="Project 3" />
+    </section>
+  </main>
   <script src="script.js"></script>
+
 </body>
 </html>
