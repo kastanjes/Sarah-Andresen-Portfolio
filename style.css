@@ -110,4 +110,10 @@
     opacity: 1;
   }
   
+  .smaller-gif {
+    max-width: 400px;
+    margin: 2rem auto;
+    display: block;
+  }
+  
   
