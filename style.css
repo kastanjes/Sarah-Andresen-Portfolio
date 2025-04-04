@@ -115,5 +115,42 @@
     margin: 2rem auto;
     display: block;
   }
+
+  .image-description {
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  
+  .personal-art {
+    margin-top: 4rem;
+  }
+  
+  .personal-art h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  /* Center-align the section title */
+.section-title {
+  text-align: center;
+  font-size: 2.8rem; /* Adjust the font size as needed */
+  margin: 15rem 0 2rem 0; /* ← this adds more space above */
+  color: #222; /* Adjust the color as needed */
+
+}
+.image-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
   
   
