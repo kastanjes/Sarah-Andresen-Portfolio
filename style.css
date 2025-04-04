@@ -159,10 +159,16 @@ margin-bottom: 3rem;
 /* 🔒 Mobile override: disable negative margins */
 @media (max-width: 1199px) {
   .portfolio img {
-    margin: 2rem auto !important;
-    max-width: 100% !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+  }
+
+  .image-block {
+    margin-bottom: 0 !important;
   }
 }
+
 
 /* 💻 Desktop override: restore layout with negative spacing */
 @media (min-width: 1200px) {
