@@ -43,18 +43,13 @@ header p {
 
 .portfolio img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
-  .portfolio img {
-    width: 100vw;
-    max-width: none;
-    margin-left: calc(-1 * ((100vw - 100%) / 2));
-  }
-}
+
 
 
 
@@ -160,3 +155,23 @@ margin-bottom: 3rem;
 }
 
 
+@media (min-width: 1200px) {
+  .portfolio img {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(-1 * ((100vw - 100%) / 2));
+  }
+
+  /* Bring back your original big-screen spacing */
+  .featured-img {
+    margin: -10rem auto 2rem auto;
+  }
+
+  img[style*="-10rem"] { margin: -10rem auto !important; }
+  img[style*="-6rem"]  { margin: -6rem auto !important; }
+  img[style*="-3rem"]  { margin: -3rem auto !important; }
+  img[style*="-15rem"] { margin: -15rem auto !important; }
+  img[style*="-8rem"]  { margin: -8rem auto !important; }
+  img[style*="4rem"]   { margin: 4rem auto !important; }
+  img[style*="2rem"]   { margin: 2rem auto !important; }
+}
