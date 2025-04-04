@@ -160,14 +160,21 @@ margin-bottom: 3rem;
 @media (max-width: 1199px) {
   .portfolio img {
     width: 100% !important;
-    max-width: none !important;
+    max-width: 100% !important;
+    height: auto !important;
     margin: 0 auto !important;
   }
 
   .image-block {
     margin-bottom: 0 !important;
   }
+
+  /* Optional: reduce top/bottom padding in body to eliminate extra whitespace */
+  body {
+    padding: 1rem !important;
+  }
 }
+
 
 
 /* 💻 Desktop override: restore layout with negative spacing */
