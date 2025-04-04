@@ -1,156 +1,162 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f9f9;
-    color: #222;
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* Header */
-  header {
-    text-align: center;
-    margin-bottom: 0rem;
-  }
-  
-  h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  header p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  /* Portfolio Section */
-  .portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0rem;
-    margin-top: 0rem;
-  }
-  
-  .portfolio img {
-    width: 100vw;
-    max-width: none;
-    border-radius: 0;
-    box-shadow: none;
-    transition: none;
-    display: block;
-    margin-left: calc(-1 * ((100vw - 100%) / 2)); /* ensures edge-to-edge */
-  }
-
-  .featured-img {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    display: block;
-    margin: -10rem auto 2rem auto; /* negative top margin = overlaps text */
-    border-radius: 0;
-    box-shadow: none;
-    position: relative;
-    z-index: 0;
-    z-index: -1;
-  }
-  
-  
-  
-
-  .contact-toggle {
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-  
-  #toggle-btn {
-    background: none;
-    border: none;
-    font-size: 1rem;
-    color: #555;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: transform 0.3s ease;
-  }
-  
-  #toggle-btn:hover {
-    color: #000;
-  }
-
-  #arrow {
-    display: inline-block;
-    transition: transform 0.3s ease;
-  }
-  
-  #arrow.rotate {
-    transform: rotate(180deg);
-  }
-  
-  
-  /* Hidden state */
-  #contact-info {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
-    opacity: 0;
-  }
-  
-  /* Visible state */
-  #contact-info.show {
-    max-height: 200px;
-    opacity: 1;
-  }
-  
-  .smaller-gif {
-    max-width: 400px;
-    margin: 2rem auto;
-    display: block;
-  }
-
-  .image-description {
-    text-align: center;
-    font-size: 1rem;
-    color: #444;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-  }
-  
-  
-  .personal-art {
-    margin-top: 4rem;
-  }
-  
-  .personal-art h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 2rem;
-  }
-
-  /* Center-align the section title */
-.section-title {
-  text-align: center;
-  font-size: 2.8rem; /* Adjust the font size as needed */
-  margin: 15rem 0 2rem 0; /* ← this adds more space above */
-  color: #222; /* Adjust the color as needed */
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.image-block {
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Portfolio Section */
+.portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0rem;
+  margin-top: 0rem;
+}
+
+.portfolio img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .portfolio img {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(-1 * ((100vw - 100%) / 2));
+  }
+}
+
+
+
+.featured-img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: -10rem auto 2rem auto; /* negative top margin = overlaps text */
+  border-radius: 0;
+  box-shadow: none;
+  position: relative;
+  z-index: 0;
+  z-index: -1;
+}
+
+
+
+
+.contact-toggle {
+  margin-top: 1.5rem;
   text-align: center;
+}
+
+#toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+#toggle-btn:hover {
+  color: #000;
+}
+
+#arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#arrow.rotate {
+  transform: rotate(180deg);
+}
+
+
+/* Hidden state */
+#contact-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+/* Visible state */
+#contact-info.show {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.smaller-gif {
+  max-width: 400px;
+  margin: 2rem auto;
+  display: block;
+}
+
+.image-description {
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
-  
-  
+
+.personal-art {
+  margin-top: 4rem;
+}
+
+.personal-art h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Center-align the section title */
+.section-title {
+text-align: center;
+font-size: 2.8rem; /* Adjust the font size as needed */
+margin: 15rem 0 2rem 0; /* ← this adds more space above */
+color: #222; /* Adjust the color as needed */
+
+}
+.image-block {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-bottom: 3rem;
+}
+
+
