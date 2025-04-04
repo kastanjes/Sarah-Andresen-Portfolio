@@ -41,14 +41,6 @@ header p {
   margin-top: 0rem;
 }
 
-.portfolio img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 
 
 
@@ -155,6 +147,24 @@ margin-bottom: 3rem;
 }
 
 
+/* Base image styles */
+.portfolio img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 🔒 Mobile override: disable negative margins */
+@media (max-width: 1199px) {
+  .portfolio img {
+    margin: 2rem auto !important;
+    max-width: 100% !important;
+  }
+}
+
+/* 💻 Desktop override: restore layout with negative spacing */
 @media (min-width: 1200px) {
   .portfolio img {
     width: 100vw;
@@ -162,7 +172,6 @@ margin-bottom: 3rem;
     margin-left: calc(-1 * ((100vw - 100%) / 2));
   }
 
-  /* Bring back your original big-screen spacing */
   .featured-img {
     margin: -10rem auto 2rem auto;
   }
@@ -175,3 +184,4 @@ margin-bottom: 3rem;
   img[style*="4rem"]   { margin: 4rem auto !important; }
   img[style*="2rem"]   { margin: 2rem auto !important; }
 }
+
